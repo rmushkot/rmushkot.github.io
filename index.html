@@ -7,6 +7,7 @@
     </head>
     <title>Robert Mushkot</title>
     <body>
+        <!-- Top Navigation Bar  -->
         <div class="topnav" id="TopNav">
             <a class="whitecolor" id="Name" href="#home">Robert Mushkot</a>
             <a href="https://github.com/rmushkot" target="_blank"><i class="fab fa-github"></i> Github</a>
@@ -23,22 +24,6 @@
           </div>
 
           <!-- Change the highlighting of the nav bar when certain things are selected.  -->
-          <script>
-              // Get the container element
-                var navContainer = document.getElementById("TopNav");
-
-                // Get all buttons with class="btn" inside the container
-                var navs = navContainer.getElementsByClassName("nav");
-
-                // Loop through the buttons and add the active class to the current/clicked button
-                for (var i = 0; i < navs.length; i++) {
-                    navs[i].addEventListener("click", function() {
-                        var current = document.getElementsByClassName("active");
-                        current[0].className = current[0].className.replace(" active", "");
-                        this.className += " active";
-                    });
-                } 
-          </script>
 
           <div class="pic" id="home">
             <img src="assets/mypicture-cropped.png" alt="avatar">
@@ -67,6 +52,7 @@
           <!-- Education -->
           <div class="edu">
               <h1 id="education">Education</h1>
+              <img src="assets/UCSC Logo.png" width="200" height="200">
               <h2>University of California - Santa Cruz</h2>
               <h3>Bachelor of Science with Honors in Computer Science</h3>
               <p>I graduated from UCSC in June of 2020 with a B.S. in Computer Science with a GPA of 3.58/4.00</p>
@@ -80,16 +66,19 @@
 
               <!-- SAP -->
               <h2>SAP Sponsorship</h2>
+              <img src="assets/SAP Logo.png" width="200" height="200">
               <h3>Undergraduate Reseacher</h3>
               <p>This is the section on SAP.</p>
 
               <!-- SSRC -->
               <h2> Storage Systems Research Center</h2>
+              <img src="assets/ssrc-logo18.png" width="450" height="150">
               <h3>Undergraduate Reseacher</h3>
               <p>SSRC Details</p>
 
               <!-- Tutoring -->
               <h2>Jack Baskin School of Engineering</h2>
+              <img src="assets/baskin logo new.png" width="400" height="150" >
               <h3>Reader/Tutor</h3>
               <p>Grading/Tutoring Details</p>
           </div>
@@ -103,4 +92,23 @@
             <p>This is the section on KVS.</p>
         </div>
     </body>
+
+
+
+    <script>
+        // Get the container element
+          var navContainer = document.getElementById("TopNav");
+
+          // Get all buttons with class="btn" inside the container
+          var navs = navContainer.getElementsByClassName("nav");
+
+          // Loop through the buttons and add the active class to the current/clicked button
+          for (var i = 0; i < navs.length; i++) {
+              navs[i].addEventListener("click", function() {
+                  var current = document.getElementsByClassName("active");
+                  current[0].className = current[0].className.replace(" active", "");
+                  this.className += " active";
+              });
+          } 
+    </script>
 </html>
