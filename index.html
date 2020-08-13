@@ -2,20 +2,48 @@
 <html>
     <head>
         <link href="style.css" rel="stylesheet"/>
+        <link type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+        <link href="assets/Font-Awesome-master/css/all.css" rel="stylesheet">    
     </head>
     <title>Robert Mushkot</title>
     <body>
         <div class="topnav" id="TopNav">
-            <a class="active" href="#home">Robert Mushkot</a>
-            <a href="assets/Resume.pdf" target="_blank">Resume</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
+            <a class="whitecolor" id="Name" href="#home">Robert Mushkot</a>
+            <a href="https://github.com/rmushkot" target="_blank"><i class="fab fa-github"></i> Github</a>
+            <a href="https://www.linkedin.com/in/robertmushkot/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
+            <a href="assets/Resume.pdf" target="_blank"><i class="fas fa-file-csv"></i> Resume</a>
+            
+            
+            <div class="topnav-right">
+                <a class="nav active" href="#home">Home</a>
+                <a class="nav" href="#experience">Experience</a>
+                <a class="nav" href="#projects">Projects</a>
+            </div>
           </div>
+
+          <!-- Change the highlighting of the nav bar when certain things are selected.  -->
+          <script>
+              // Get the container element
+                var navContainer = document.getElementById("TopNav");
+
+                // Get all buttons with class="btn" inside the container
+                var navs = navContainer.getElementsByClassName("nav");
+
+                // Loop through the buttons and add the active class to the current/clicked button
+                for (var i = 0; i < navs.length; i++) {
+                    navs[i].addEventListener("click", function() {
+                        var current = document.getElementsByClassName("active");
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                    });
+                } 
+          </script>
 
           <div class="pic">
             <img src="assets/mypicture-cropped.png" alt="avatar">
           </div>
 
+          <!-- Home Page  -->
           <div class="home">
               <h1>Hi I'm Robert! This website is currently a work in progress and subject to change very soon.</h1>
               <p>Hi, I am Robert Mushkot and I graduated from UC Santa Cruz in June 2020 with a degree in Computer Science. 
@@ -24,15 +52,18 @@
                     to download my resume. </p>
           </div>
           
+          <!-- Contact me  -->
           <div class="contact">
               <h2>You can contact me here! Feel free to also checkout my github page!</h2>
               <ul>
                 <li>Email: bobby.mushkot@gmail.com</li>
                 <li>Linkedin: <a href="https://www.linkedin.com/in/robertmushkot/" target="_blank">robertmushkot</a></li>
                 <li>Phone: (661) 645-0675</li>
+                <li>Github: <a href="https://github.com/rmushkot" target="_blank">rmushkot</a></li>
               </ul>
           </div>
-
+<hr>
+          <!-- Experience -->
           <div class="exp">
               <h1 id="experience">Experience</h1>
 
@@ -52,6 +83,9 @@
               <p>Grading/Tutoring Details</p>
           </div>
 
+          <hr>
+
+          <!-- Projects -->
           <div class="pro">
             <h1 id="projects">Projects</h1>
             <h2>Sharded Fault Tolerant Distributed Key-value Store</h2>
