@@ -15,18 +15,20 @@ body {
   box-sizing: border-box;
 }
 .mypic img {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;  
-  border-radius: 100%;
+  border-radius: 70%;
+  max-width: 246px;
+  height: auto;
+  vertical-align: middle;
+  border: 10px solid #F3EFE0;;
+  
 }
 
 .home {
   overflow: hidden;
   box-sizing: border-box;
-  
-  
   display: block;
   float: none;
   line-height: 24.6px;
@@ -34,6 +36,7 @@ body {
   z-index: auto;
   
   padding: 40px 180px;
+  padding-top: 80px;
   width: 100%;
   max-width: 1170px;
   margin: auto;
@@ -42,12 +45,15 @@ body {
 .home h2 {
   font-size: 54px;
   text-align: center;
-  font-weight: normal;
   color: #22A39F;
+  font-style: normal; 
+  font-variant: normal; 
+  font-weight: 300;
 }
 
 .home h3 {
   font-size: 28px;
+  font-weight: 300;
   font-weight: normal;
   color: #22A39F;
 }
@@ -61,16 +67,22 @@ body {
 }
 
 hr {
-  /* margin: 40px 0px; */
-  margin: auto;
+  margin: 40px 0px;
+  /* margin: auto; */
   border-color: #727878;
   opacity: .2;
   width: 810px;
   height: 0;
-  box-sizing: content-box;
-  
+  box-sizing: content-box;  
 }
 
+.strong {
+  font-family: 'Open Sans', sans-serif !important; 
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  box-sizing: border-box;
+}
 .row {
   overflow: hidden;
   /* margin-right: -15px;
@@ -85,30 +97,7 @@ hr {
   float: left;
   width: 33.3333333%;
 }
-.left {
-  width: 33%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.middle {
-  width: 33%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.right {
-  width: 33%;
-  position: relative;
-  min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
-}
 
-/* #home .row > div {margin-bottom: 20px;}
-#home .row > div img {width: 100%; max-width: 246px; height: auto;}  */
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #212529;
