@@ -5,13 +5,16 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  color: black;
-  /* padding-top: 100px; */
-  
+  color: black;  
 }
 
 .background-white {
   background: white;
+  box-sizing: border-box;
+}
+
+.background-tan {
+  background: #F3EFE0;
   box-sizing: border-box;
 }
 .mypic img {
@@ -42,7 +45,7 @@ body {
   margin: auto;
 }
 
-.home h2 {
+h2 {
   font-size: 54px;
   text-align: center;
   color: #22A39F;
@@ -51,19 +54,50 @@ body {
   font-weight: 300;
 }
 
-.home h3 {
+h3 {
   font-size: 28px;
   font-weight: 300;
   font-weight: normal;
   color: #22A39F;
 }
 
-.home p {
+h4 {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.1;
+}
+
+p {
   margin: 0 0 10px;
   box-sizing: border-box;
   font-size: 15px;
   color: #434242;
   text-align: left;
+}
+
+.career {
+  overflow: hidden;
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 24.6px;
+  position: static;
+  z-index: auto;
+  
+  padding: 40px 180px;
+  padding-top: 80px;
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.career-details {
+  display: block;
+  color: #22A39F;
+  box-sizing: border-box;
+  margin-top: 6px;
 }
 
 hr {
@@ -83,6 +117,7 @@ hr {
   font-weight: 700;
   box-sizing: border-box;
 }
+
 .row {
   overflow: hidden;
   /* margin-right: -15px;
@@ -98,6 +133,20 @@ hr {
   width: 33.3333333%;
 }
 
+.col-md-8 {
+  width: 66.6666666%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.education-indent {
+  text-indent: 30px;
+}
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #212529;

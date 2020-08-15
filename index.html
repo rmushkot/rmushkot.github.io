@@ -5,7 +5,9 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600,700" rel="stylesheet" type="text/css">
         <link href="assets/Font-Awesome-master/css/all.css" rel="stylesheet">    
     </head>
+
     <title>Robert Mushkot</title>
+
     <body>
         <!-- Top Navigation Bar  -->
         <div class="topnav" id="TopNav">
@@ -21,28 +23,29 @@
                 <a class="nav" href="#experience">Experience</a>
                 <a class="nav" href="#projects">Projects</a>
             </div>
-          </div>
+            </div>
 
-          <!-- Home Page  -->
-          <div class="background-white">
-          <div id ="profile" class="home">
-              <h2>Profile</h2>
+        <!-- Home Page  -->
+        <div class="background-white">
+            <!-- Profile -->
+            <div id ="profile" class="home">
+                <h2>Profile</h2>
             <hr>
-              <div class="row">
-                  <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-4">
                     <h3>About me</h1>
                         <p>Hi, I am Robert Mushkot and I graduated from UC Santa Cruz in June 2020 with a degree in Computer Science. 
                             I have a passion for back-end systems like developing distributed systems, cybersecurity and 
                             working on Operating Systems! I enjoy working through tough problems and finding creative and effective solutions. </p>
-                  </div>
-                  
-                  <div class="col-md-4">
+                    </div>
+                    
+                    <div class="col-md-4">
                     <div class="mypic" id="home">
                         <img src="assets/mypicture-cropped.png" alt="avatar" width="246" height="246">
-                      </div>
-                  </div>
-                  
-                  <div class="col-md-4">
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
                     <h3>Details</h3>
                         <p>
                             <strong>Name:</strong>
@@ -57,56 +60,112 @@
                             <br>
                             Santa Clarita, California
                             <br>
-                            Looking for opportunities in the San Francisco Bay Area, California
+                            <!-- Debating taking this out -->
+                            <strong>Goals:</strong>
+                            Looking for Software Engineering roles in the San Francisco Bay Area.
                         </p>
-                  </div>
-                  
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+        
+    <div class="background-tan">
+        <div class="career">
+            <h2>Career</h2>
+            <hr>
+            <h3>Education</h3>
+            
+            <!-- Education -->
+            <div class="education">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>University of California <br> Santa Cruz</h4>
+                        <p class="education-time">Sep 2016 - June 2020</p>
+                        <br>
+                        <img src="assets/UCSC Logo.png" width="220" height="220">
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            <strong>Bachelor of Science in Computer Science</strong>
+                            <br>
+                            <span class="hidden-phone">
+                                <p class="education-indent">
+                                    I graduated from UCSC in June of 2020 with a B.S. Summa Cum Laude in Computer Science with a GPA of 3.58/4.00. My education allowed me to take a large variety of 
+                                    classes, each giving me unique skills. I took courses such as Operating Systems, Distributed Systems, Computer Architecture, Artifical Intelligence, Database Systems, 
+                                    and many more. These courses gave me the skills needed to succeed in the industry and taught me how to learn and adapt to new technologies. 
+                                    <br>
+                                </p>
+                                <p class="education-indent">
+                                    In addition to courses, I was also a Student Supervisor at one of the Dining Halls on campus. My responsibilties included ensuring that all safety precautions were 
+                                    being upheld as well as auditing safety paperwork. Additionally I would guide student workers to completion of tasks at numerous cooking and serving stations and was responsible for training and hiring new students. 
+                                    This position taught me so much about leadership and responsibilty and these lessions will stick with me throughout my life.
+                                </p>
+                            </span>
+                            <span class="career-details">
+                                <span class="location">
+                                    <span class="map-marker">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                    </span>
+                                    Santa Cruz, California
+                                </span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience -->
+            <hr>
+            <h3>Experience</h3>
+            <div class="education">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>SAP Sponsorship</h4>
+                        <p class="education-time">Jan 2020 - June 2020</p>
+                        <img src="assets/SAP Logo.png" width="220" height="200">
+                        <img src="assets/1200px-Intel-logo.svg.png" width="200" height="150">
+                    </div>
+
+                    <div class="col-md-8">
+                        <p>
+                            <strong>Undergraduate Reseacher</strong>
+                            <br>
+                            <span class="hidden-phone">
+                                <p class="education-indent">
+                                    For six months I worked on SAP's HANA database to improve the performance of a key function of the database. HANA servers over 32,000 enterprise customers all over the world
+                                    with a purpose of providing a high performance, data-driven, and real-time decision-making database. HANA is constructed into two partions, one optimized for read operations
+                                    and the other optimized for write operations. Due to the structure of HANA, a crucial operation called "Delta Merge" is used to merge data from one partition into the other. 
+                                    Delta Merge handles millions of column entries every time it runs so speed is essential.    
+                                </p>
+                                <p class="education-indent">
+                                    Working with both SAP and Intel, my team and I aimed to increase the data throughput of the Delta Merge operation. Originally SAP's implementation was able to achieve a 5-10 GB/s
+                                    throughput. Our plan to improve upon this was to use an Intel Field Programmable Gate Array (FPGA) in collaboration with OpenCL. An FPGA was chosen due to its parallel computing 
+                                    nature while OpenCL provides a convenient framework to work on FPGAs as well as assisting in optimizing code. By utilizing pipeline parallelism and vectorization techniques we were 
+                                    able to achieve a 200% increase in data throughput, increasing it to 15-20 GB/s. 
+                                </p>
+                            </span>
+                            <span class="career-details">
+                                <span class="location">
+                                    <span class="map-marker">
+                                        <i class="fa fa-map-marker-alt"></i>
+                                    </span>
+                                    Santa Cruz, California
+                                </span>
+                            </span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        
-        <!-- Education -->
-          <div class="edu">
-              <h1 id="education">Education</h1>
-              <img src="assets/UCSC Logo.png" width="200" height="200">
-              <h2>University of California - Santa Cruz</h2>
-              <h3>Bachelor of Science with Honors in Computer Science</h3>
-              <p>I graduated from UCSC in June of 2020 with a B.S. in Computer Science with a GPA of 3.58/4.00</p>
-          </div>
-          
-          <hr>
+    </div>
 
-          <!-- Experience -->
-          <div class="exp">
-              <h1 id="experience">Experience</h1>
-
-              <!-- SAP -->
-              <h2>SAP Sponsorship</h2>
-              <img src="assets/SAP Logo.png" width="200" height="200">
-              <h3>Undergraduate Reseacher</h3>
-              <p>This is the section on SAP.</p>
-
-              <!-- SSRC -->
-              <h2> Storage Systems Research Center</h2>
-              <img src="assets/ssrc-logo18.png" width="450" height="150">
-              <h3>Undergraduate Reseacher</h3>
-              <p>SSRC Details</p>
-
-              <!-- Tutoring -->
-              <h2>Jack Baskin School of Engineering</h2>
-              <img src="assets/baskin logo new.png" width="400" height="150" >
-              <h3>Reader/Tutor</h3>
-              <p>Grading/Tutoring Details</p>
-          </div>
-
-          <hr>
-
-          <!-- Projects -->
+          <!-- Projects
           <div class="pro">
             <h1 id="projects">Projects</h1>
             <h2>Sharded Fault Tolerant Distributed Key-value Store</h2>
             <p>This is the section on KVS.</p>
-        </div>
+        </div> -->
     </body>
 
 
