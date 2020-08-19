@@ -59,9 +59,13 @@ body {
   color: rgb(165, 165, 165);
   text-decoration: none;
   display: block;
-  line-height: 32px;
+  /* float: left;   */
+  /* line-height: 32px; */
   margin-bottom: 20px;
+}
 
+.contact i {
+  float: left;
 }
 .contact a:hover {
   opacity: 1;
