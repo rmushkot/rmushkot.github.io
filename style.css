@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background-color:white;
@@ -38,6 +42,7 @@ body {
   width: 100%;
   max-width: 1170px;
   margin: auto;
+  padding-bottom: 200px;
 }
 
 .contact h2 {
@@ -151,6 +156,7 @@ p {
   width: 100%;
   max-width: 1170px;
   margin: auto;
+  transition: 1s;
 }
 
 .career-details {
