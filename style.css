@@ -14,7 +14,6 @@ body {
 }
 
 .jumbotron {
-  background: #22A39F;
   box-sizing: border-box;
   /* overflow: hidden; */
   box-sizing: border-box;
@@ -22,16 +21,31 @@ body {
   float: none;
   line-height: 24.6px;
   position: static;
-  z-index: auto;
+  z-index: 4;
   padding: 40px 180px;
   padding-top: 80px;
   width: 100%;
   max-width: 100%;
   margin: auto;
   padding-bottom: 200px;
-  opacity: 80%;
+  opacity: 90%;
   height: 100%;
+  /* background: no-repeat center right fixed url(assets/michael-dziedzic-deHhHOttSdk-unsplash.jpg);  */
+  background: no-repeat center right fixed url(assets/sergi-kabrera-2xU7rYxsTiM-unsplash.jpg); 
+
+  background-size: 100%;
+  background-color: #22A39F;
+  /* filter: grayscale(100%); */
 }
+
+.jumbotron .overlay { background-color: #22A39F; 
+  position: absolute; 
+  top: 0px; bottom: 0px; left: 0px; right: 0px; 
+  opacity: 0.75; 
+  filter:alpha(opacity=75); 
+  z-index: 2; 
+}
+
 .jumbotron .container {
   position: relative;
   top: 28%;
