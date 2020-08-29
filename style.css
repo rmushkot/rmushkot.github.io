@@ -151,6 +151,59 @@ body {
   margin-top: 6px;
 }
 
+/* --------------------------------------- SKILLS --------------------------------------- */
+.skills {
+  overflow: hidden;
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 24.6px;
+  position: static;
+  z-index: auto;
+  
+  padding: 40px 180px;
+  padding-top: 80px;
+  width: 100%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.skills li {
+  min-height: 30px;
+  padding: 0px 0px;
+}
+
+.skills li:hover {
+  background: #f2f2f2;
+  /* margin-left: 2px; */
+}
+.skills .skill-title{
+  box-sizing: border-box;
+  display: inline-block;
+  width: 60%;
+}
+
+.skills .skill-score {
+  float: right;
+}
+
+.skills .skill-score .glyphicon {
+  color: #DFE0E0; 
+	font-size: 14px; 
+	 
+	-webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.skills .skill-score .glyphicon.filled {
+  color: #22A39F;
+}
+
+.skills ul li:hover .skill-score .glyphicon {
+  margin-left: 2px;
+}
 /* --------------------------------------- PROJECTS --------------------------------------- */
 .projects {
   overflow: hidden;
@@ -426,6 +479,12 @@ body {
 }
 
 /* --------------------------------------- MISC --------------------------------------- */
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+
+}
 h2 {
   font-size: 54px;
   text-align: center;
@@ -532,3 +591,31 @@ hr {
 .pro h1 {
   padding-top: 70px;
 }
+
+@font-face {
+  font-family:'Glyphicons Halflings';
+  src:url(assets/fonts/glyphicons-halflings-regular.eot);
+  src:url(assets/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'),
+  url(assets/fonts/glyphicons-halflings-regular.woff) format('woff'),
+  url(assets/fonts/glyphicons-halflings-regular.ttf) format('truetype'),
+  url(assets/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+ }
+
+ .glyphicon {
+  position:relative;
+  top:1px;
+  display:inline-block;
+  font-family:'Glyphicons Halflings';
+  font-style:normal;
+  font-weight:400;
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+ }
+
+ .glyphicon-star:before {
+  content:"\e006"
+ }
+ .glyphicon-star-empty:before {
+  content:"\e007"
+ }
