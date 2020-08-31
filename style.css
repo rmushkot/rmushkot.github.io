@@ -230,11 +230,13 @@ body {
 .projects img {
   /* margin-left: auto;
   margin-right: auto; */
-  width: 110%;  
+  width: 110%;
   /* height: auto; */
   vertical-align: middle;
   line-height: 24.6px;
   border-image-repeat: stretch;
+  border: 0;
+  background-size: cover;
 }
 
 .projects .effect img {
